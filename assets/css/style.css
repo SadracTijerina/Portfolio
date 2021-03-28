@@ -15,6 +15,14 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.section-titles {
+  color: var(--blue-color);
+  font-size: 34px;
+  font-weight: lighter;
+  padding: 0 1%;
+  margin-top: 1%;
+}
+
 /* Header / Nav Start*/
 
 header {
@@ -67,12 +75,13 @@ header nav ul li a:hover {
   background-attachment: fixed;
   background-position: 80%;
 }
-.hero h2 {
+.hero h3 {
   color: var(--white-color);
   font-weight: lighter;
+  font-size: 30px;
 }
 
-#about-me {
+#subtitle {
   background-color: var(--blue-color);
   border: solid 3px var(--dark-blue-color);
   margin: 25% 5% 10%;
@@ -80,3 +89,26 @@ header nav ul li a:hover {
 }
 
 /* Hero End*/
+
+/* About Me Start */
+#about-me {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  background-color: var(--light-blue-color);
+}
+
+#about-me p {
+  color: var(--blue-color);
+  font-size: 18px;
+  border-left: solid 3px var(--blue-color);
+  margin: 1% 15% 1% 1%;
+  padding: 5px 10px;
+}
+
+/* About Me End */
+
+/* Projects Start*/
+#projects {
+}
+/* Projects End */
