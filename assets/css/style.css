@@ -55,5 +55,28 @@ header nav ul li a {
 header nav ul li a:hover {
   color: var(--blue-color);
 }
-
 /* Header / Nav End */
+
+/* Hero Start*/
+.hero {
+  background-image: url(../images/hero.jpeg);
+  background-size: cover;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+.hero h2 {
+  color: var(--white-color);
+  font-weight: lighter;
+}
+
+#about-me {
+  background-color: var(--blue-color);
+  border: solid 3px var(--dark-blue-color);
+  margin: 25% 5% 10%;
+  padding: 0.5% 3.4%;
+}
+
+/* Hero End*/
