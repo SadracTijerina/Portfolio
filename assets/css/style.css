@@ -106,12 +106,8 @@ header nav ul li a:hover {
   color: var(--blue-color);
   font-size: 18px;
   border-left: solid 3px var(--blue-color);
-  padding: 8px;
-}
-
-#about-me h2 {
-  padding: 0 1%;
-  margin-top: 1%;
+  padding: 8px 0 8px 50px;
+  margin-bottom: 10px;
 }
 
 /* About Me End */
@@ -121,11 +117,13 @@ header nav ul li a:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
+  justify-content: right;
   padding: 0 0 0 2%;
   margin-top: 0.5%;
 }
 
 .main-project img {
-  width: 80%;
+  width: 95%;
+  flex-shrink: 2;
 }
 /* Projects End */
