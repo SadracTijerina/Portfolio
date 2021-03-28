@@ -13,14 +13,19 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--light-blue-color);
 }
 
 .section-titles {
   color: var(--blue-color);
   font-size: 34px;
   font-weight: lighter;
-  padding: 0 1%;
-  margin-top: 1%;
+  width: 52%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* Header / Nav Start*/
@@ -72,8 +77,7 @@ header nav ul li a:hover {
   display: flex;
   flex-flow: row-reverse nowrap;
   justify-content: flex-start;
-  background-attachment: fixed;
-  background-position: 80%;
+  background-position: center;
 }
 .hero h3 {
   color: var(--white-color);
@@ -95,20 +99,33 @@ header nav ul li a:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
-  background-color: var(--light-blue-color);
+  margin: 25px 0;
 }
 
 #about-me p {
   color: var(--blue-color);
   font-size: 18px;
   border-left: solid 3px var(--blue-color);
-  margin: 1% 15% 1% 1%;
-  padding: 5px 10px;
+  padding: 8px;
+}
+
+#about-me h2 {
+  padding: 0 1%;
+  margin-top: 1%;
 }
 
 /* About Me End */
 
 /* Projects Start*/
 #projects {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  padding: 0 0 0 2%;
+  margin-top: 0.5%;
+}
+
+.main-project img {
+  width: 80%;
 }
 /* Projects End */
