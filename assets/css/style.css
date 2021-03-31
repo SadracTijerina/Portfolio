@@ -1,3 +1,5 @@
+/* add content-block to each section and content-block h2*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +22,6 @@ body {
   color: var(--blue-color);
   font-size: 34px;
   font-weight: lighter;
-  width: 52%;
 }
 
 .container {
@@ -28,8 +29,15 @@ body {
   margin: 0 auto;
 }
 
-/* Header / Nav Start*/
+.content-block {
+  flex: 0 0 77%;
+}
 
+.content-block h2 {
+  flex: 0 0 20%;
+}
+
+/* Header / Nav Start*/
 header {
   padding: 20px 35px;
   background-color: var(--dark-blue-color);
@@ -115,7 +123,7 @@ header nav ul li a:hover {
 /* Projects Start*/
 #projects {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: flex-start;
   justify-content: right;
   padding: 0 0 0 2%;
@@ -126,4 +134,40 @@ header nav ul li a:hover {
   width: 95%;
   flex-shrink: 2;
 }
+
+#run-buddy {
+  background-image: url("../images/project-1.jpeg");
+  min-width: 50%;
+}
+
+.list-of-project {
+  min-width: 70%;
+}
+
+.project-description h4 {
+  color: var(--blue-color);
+  font-size: 22px;
+}
+
+.project-description p {
+  color: var(--blue-color);
+  font-size: 18px;
+  font-weight: lighter;
+}
 /* Projects End */
+
+/*contact-me start*/
+#contact-me {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#contact-me p,
+#contact-me a {
+  color: var(--blue-color);
+  font-size: 18px;
+  text-decoration: none;
+}
+/*contact-me end*/
