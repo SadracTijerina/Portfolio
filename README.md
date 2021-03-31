@@ -8,4 +8,4 @@ This is a webpage of my portfolio. It has some of my projects that I have comple
 
 ## Link to webpage
 
-https://sadractijerina.github.io/Horiseon/
+https://sadractijerina.github.io/Portfolio/
