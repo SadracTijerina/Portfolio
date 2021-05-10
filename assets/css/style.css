@@ -1,5 +1,3 @@
-/* add content-block to each section and content-block h2*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,65 +16,51 @@ body {
   background-color: var(--light-blue-color);
 }
 
+img {
+  width: 100%;
+}
+
 .section-titles {
   color: var(--blue-color);
   font-size: 34px;
   font-weight: lighter;
 }
 
-.container {
-  width: 70%;
-  margin: 0 auto;
+.border {
+  border-left: solid 3px var(--dark-blue-color);
 }
 
-.content-block {
-  flex: 0 0 77%;
+/* Navbar start */
+.navbar-nav {
+  margin-left: auto;
 }
 
-.content-block h2 {
-  flex: 0 0 20%;
-}
-
-/* Header / Nav Start*/
-header {
-  padding: 20px 35px;
+.navbar-custom {
   background-color: var(--dark-blue-color);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
 }
 
-header h1 {
-  font-weight: lighter;
-  font-size: 38px;
+.navbar-custom .navbar-brand {
+  margin-left: 15px;
+}
+
+.navbar-custom .navbar-nav {
+  margin-right: 15px;
+}
+
+/* change the brand text color */
+.navbar-custom .navbar-brand {
   color: var(--white-color);
-}
-
-header a {
-  text-decoration: none;
-  color: var(--white-color);
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-}
-
-header nav ul li a {
-  padding: 0 15px;
-  font-weight: lighter;
   font-size: 1.4vw;
 }
-
-header nav ul li a:hover {
-  color: var(--blue-color);
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--white-color);
+  font-size: 1vw;
 }
-/* Header / Nav End */
+/* change the color of active or hovered links */
+.navbar-custom .nav-item:hover {
+  color: var(--light-blue-color);
+}
 
 /* Hero Start*/
 .hero {
@@ -99,75 +83,50 @@ header nav ul li a:hover {
   margin: 25% 5% 10%;
   padding: 0.5% 3.4%;
 }
-
 /* Hero End*/
 
-/* About Me Start */
+/* About me start */
 #about-me {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  margin: 25px 0;
+  margin-top: 15px;
 }
-
 #about-me p {
   color: var(--blue-color);
   font-size: 18px;
-  border-left: solid 3px var(--blue-color);
-  padding: 8px 0 8px 50px;
-  margin-bottom: 10px;
 }
 
-/* About Me End */
+/* About me end*/
 
-/* Projects Start*/
-#projects {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: right;
-  padding: 0 0 0 2%;
-  margin-top: 0.5%;
+/* Project*/
+.img-txt {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.main-project img {
-  width: 95%;
-  flex-shrink: 2;
-}
-
-#run-buddy {
-  background-image: url("../images/project-1.jpeg");
-  min-width: 50%;
-}
-
-.list-of-project {
-  min-width: 70%;
-}
-
-.project-description h4 {
+/* Bottom left text */
+.project-description {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: var(--white-color);
   color: var(--blue-color);
-  font-size: 22px;
+  padding-left: 10px;
+  padding-right: 10%;
+  border-radius: 25px;
 }
 
+.project-description h5,
 .project-description p {
-  color: var(--blue-color);
-  font-size: 18px;
-  font-weight: lighter;
-}
-/* Projects End */
-
-/*contact-me start*/
-#contact-me {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-evenly;
+  margin: 5px;
 }
 
+.img-txt {
+  margin-bottom: 20px;
+}
+/* Project end */
 #contact-me p,
 #contact-me a {
   color: var(--blue-color);
-  font-size: 18px;
   text-decoration: none;
+  font-size: 18px;
 }
-/*contact-me end*/
